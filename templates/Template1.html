@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+
+
+{% block nav %}
+
+{% endblock %}
+
+{% block header %}
+<div class="container"> <div class="align-content-center jumbotron"> <h1> <em> Personal online portfolio</em> </h1></div> </div>
+{% endblock %}
+
+
+
+
+{% block list %}
+
+<div class="row">
+    <div class="col-lg-12 table-dark" style="position:center">
+    <ol class="text-uppercase">
+	<li class="list-group-item-success" style="text-align: center"> My CV  </li>
+		<ul > <li > <a href="#CV" class="btn btn-danger" role="button"> CV </a>  </li> </ul>
+	<li class="list-group-item-info" style="text-align: center"> My Projects : My past or current projects </li>
+        <ul > <li > <a href="#Projects" class="btn btn-danger" role="button"> Projects </a> </li> </ul>
+	<li class="list-group-item-danger" style="text-align: center"> A reminder page : General calendar.</li>
+		<ul > <li >  <a href="#Reminders" class="btn btn-danger" role="button"> Reminders </a> </ul>
+	<li class="list-group-item-warning" style="text-align: center"> My personal bookmarks : A small table about useful sites </li>
+		<ul > <li > <a href="#bookmarks" class="btn btn-danger" role="button"> Bookmarks </a> </li> </ul>
+	<li class="list-group-item-light" style="text-align: center"> My documents and manuals:Bunch of PDFs , lecture notes etc.</li>
+		<ul > <li > <a href="#documents" class="btn btn-danger" role="button"> Documents </a> </li> </ul>
+	</ol>
+</div>
+</div>
+{% endblock %}
+
+{% block CV %}
+
+
+    <table class="table-dark thead-light " border="1" style="float:left;margin-left: 15%;margin-right: 30%" >
+	<a id="CV"> </a>
+	<tr>
+		<td>
+			<h3> <strong>  <em> My CV </em> </strong> </h3>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="../static/CV.pdf"><img src="https://www.thebalancecareers.com/thmb/i6-x6JmRh63zacoUYZ9_IRVD3jw=/950x0/cropped-hands-of-business-people-holding-resume-on-table-in-office-944152896-5af32eb3ff1b7800204fa3d0.jpg" alt="My CV" width = "400" height = "400" > </a>
+		</td>
+	</tr>
+
+	</table >
+
+
+{% endblock %}
+
+{% block Projects %}
+<a id="Projects"> </a>
+
+	<table border="1" class="table-dark " >
+	<tr>
+		<td>
+			<h3> <strong>  <em> My Projects </em> </strong> </h3>
+		</td>
+	</tr>
+	<tr>
+		<td>
+            <a ><img src="https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg" alt="My CV" width = "400" height = "400" > </a>
+
+		</td>
+	</tr>
+
+	</table>
+
+{% endblock %}
+
+{% block reminder %}
+ <br />
+    <br />
+    <a id="Reminders"> </a>
+<div class="jumbotron align-content-center ">
+	<h1 style="text-align:center"> Reminders </h1>
+</div>
+{% endblock %}
+
+    {% block Bookmarks %}
+	<table border="1" class="table-light" style="float:left;margin-right: 40%;margin-left:15% " >
+	<tr>  <td colspan = "3"> <a id="bookmarks"> <h1> <strong> Bookmarks </strong> </h1></a> <img src="https://www.incimages.com/uploaded_files/image/970x450/getty_883231284_200013331818843182490_335833.jpg" width="250" height="200"> </td> </tr>
+	<tr>  <td> <a href="https://www.concordia.ca/"> Concordia Main Site </a> <td rowspan="2"> <a href="https://html.com"> Guide to HTML </a> </td></tr>
+	<tr>  <td> <a href=">https://my.concordia.ca/"> My Concordia Site	</a></td> </tr>
+
+	</table>
+
+{% endblock %}
+
+{% block Documents %}
+<table border="1" class="table-light">
+		<tr> <td > <h1> <strong> <a id="documents"> My Documents </a> </strong> </h1> </td> </tr>
+	<tr>
+		<td >
+			<ul>
+				<li> <a href="../static/SOEN287HTMLnotes.pdf"> HTML notes </a> </li>
+				<li> <a href="../static/3-CSS%20Part1.pdf.pdf"> CSS1 </a>  </li>
+                <li> <a href="../static/3-CSS%20Part2.pdf"> CSS2 </a>  </li>
+                <li> <a href="../static/4-Python%20Part12.pdf"> Py12 </a>  </li>
+                <li> <a href="../static/4-Python%20Part3.pdf"> Py3 </a>  </li>
+                <li> <!-- to be added-->  </li>
+                <li> <!-- to be added-->  </li>
+                <li> <!-- to be added-->  </li>
+                <li> <!-- to be added-->  </li>
+
+			</ul>
+		</td>
+
+	</table>
+{% endblock %}
+<br />
+<br />
+<br />
+
+{% block mail %}<br />
+<br />
+<br />
+ <div style="background-color:yellow;">
+	<p style="color:red;text-align: center">  FAST MAIL </p>
+		<ol style="align-content: center">
+			<li style="text-align: center"> <a href="mailto:jayakumar@cs.concordia.ca"> COOP PROGRAM COORDINATOR </a> </li>
+		</ol>
+
+ </div>
+{% endblock %}

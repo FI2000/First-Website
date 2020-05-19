@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block Documents %}
+<div class="container " style="width: 400px;height: 300px">
+   <p style="text-align: center;font-size: 30pt;font-family:Bahnschrift;font-style:bolder ;font-weight: bolder;color:darkslategrey">MY DOCUMENTS</p> <br /> <br />
+    <ul class="list-group " style="list-style-type: none">
+
+                <li  class="list-group-item-dark"> <a href="../static/SOEN287HTMLnotes.pdf" style="margin-left: 40%;color:darkred;font-family:'Arial Black';text-decoration: none"> HTML notes </a>  </li>
+				<li  class="list-group-item-dark"> <a href="../static/3-CSS%20Part1.pdf.pdf" style="margin-left:  40%;color:darkred;font-family:'Arial Black';text-decoration: none"> CSS1 </a>  </li>
+                <li  class="list-group-item-dark"> <a href="../static/3-CSS%20Part2.pdf" style="margin-left:  40%;color:darkred;font-family:'Arial Black';text-decoration: none"> CSS2 </a>  </li>
+                <li  class="list-group-item-dark"> <a href="../static/4-Python%20Part12.pdf" style="margin-left:  40%;color:darkred;font-family:'Arial Black';text-decoration: none"> Py12 </a>  </li>
+                <li  class="list-group-item-dark"> <a href="../static/4-Python%20Part3.pdf" style="margin-left:  40%;color:darkred;font-family:'Arial Black';text-decoration: none"> Py3 </a>  </li>
+
+			</ul>
+		</div>
+
+
+     <form style="margin-left: 42.5%" action="upload.php" method="post" enctype="multipart/form-data">
+   <h1 style="color:blue;font-family: Bahnschrift"> Select file to upload: </h1>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload" name="submit">
+</form>
+
+{% endblock %}

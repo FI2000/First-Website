@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block nav %}
+
+  <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm   " style="position:relative;bottom:32px;">
+ <!-- Links -->
+  <ul class="navbar-nav ml-auto" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+            &#9776
+          </button>
+      <div class="collapse navbar-collapse" id="collapse">
+     <li class="nav-item">
+      <a class="nav-link" href="Guest.html"> Home </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="CVguest.html">CV</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="ProjectsGuest.html">Projects</a>
+    </li>
+          <li class="nav-item">
+      <a class="nav-link" style="color: green"  onclick="RandomFact()">Random Fact</a>
+    </li>
+            <li class="nav-item">
+      <a class="nav-link n" style="color: green" onclick="Time()">Time</a>
+    </li>
+          <li class="nav-item">
+      <a class="nav-link" style="color: green"  onclick="bgChangeNight()">NightMode</a>
+    </li>
+
+
+        <li class="navbar-nav ml-auto">
+      <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+    <input name="sitesearch" type="hidden" value="">
+    <input autocomplete="on" class="form-control search" name="q" placeholder="Search on Google" required="required"  type="text">
+      <button class="button" type="submit">Search</button>
+
+
+      </form>
+      </li>
+      </div>
+  </ul>
+
+</nav>
+
+<br />
+    <br />
+    <br />
+
+{% endblock %}
+
+{% block bio %}
+    <p style="font-family: Bahnschrift;color: yellow; font-weight: bolder; text-align: center;position:fixed;margin-left: 26%;font-size: 20pt; border: dashed red 1px">
+        Hello, My name is Farouk Ihdene. I am currently studying software engineering at Concordia University. <br />
+        I'm currently at my second semester and studying hard to succeed. <br />
+        I like soccer , video games and jogging. <br />
+
+    </p>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block Bookmarks %}
+
+    <div style="margin-left: 47%">
+
+        <form action="/BookmarksShow" method="POST">
+
+            <input type="submit" class="btn btn-outline-danger" value="Extend"/>
+        </form>
+    </div>
+
+
+
+     <div class="container-sm" style="width: 330px;margin-left: 38%">
+ <table border="1" class=" table-hover table table-bordered d-md-table" style="float:left;margin-left:36%;margin-right: 70% " >
+	<tr>  <td colspan = "3"> <a id="bookmarks" style="color:darkred;font-family:'Arial Black';font-size: 40pt"> <h1> <strong> Bookmarks </strong> </h1></a>  <img src="https://www.incimages.com/uploaded_files/image/970x450/getty_883231284_200013331818843182490_335833.jpg" width="250" height="200"></td> </tr>
+	<tr>  <td > <a href="https://www.concordia.ca/" style="color:darkred;font-family:'Arial Black';text-decoration: none";> Concordia Main Site </a>  </tr>
+	<tr>  <td> <a href=">https://my.concordia.ca/" style="color:darkred;font-family:'Arial Black';text-decoration: none";> My Concordia Site	</a></td> </tr>
+     <tr>  <td>  <a href="https://html.com" style="color:darkred;font-family:'Arial Black';text-decoration: none";> Guide to HTML </a> </td> </tr>
+ </table>
+
+</div>
+<br />
+    <br />
+    <br />
+
+    <div style="margin-left: 45%">
+        <label style="font-weight: bold"> Adding elements to the table. </label>
+        <label style="font-weight: bold"> Enter the identifier in the first box and the link in the second : </label>
+        <form action="/BookmarksData" method="POST">
+            <input type="text" name="identifier"/>
+            <input type="text" name="link"/>
+            <input type="submit" class="btn btn-primary" value="submit"/>
+        </form>
+    </div>
+	</table>
+
+
+{% endblock %}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+	<title> MyPersonalPortfolio </title>
+	<<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="../static/Functions.js">
+
+    </script>
+    <style>
+
+    body, html {
+  height: 100%;
+}
+
+body {
+
+    background-image: url('../static/pictures/bg.png');
+
+  /* Full height */
+  height: 90%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+        .nav-link{
+            color:green;
+            font-family:"Comic Sans MS";
+            font-weight:bolder;
+        }
+
+        .footer {
+  position: fixed;
+            height:13%;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+
+  text-align: center;
+}
+       </style>
+
+	</head>
+
+	<body>
+
+    {% block nav %}
+
+<nav class="navbar navbar-expand-sm   " style="position:relative;bottom:32px;">
+
+  <ul class="navbar-nav ml-auto" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+            &#9776
+          </button>
+      <div class="collapse navbar-collapse" id="collapse">
+     <li class="nav-item">
+      <a class="nav-link" href="home"> Home </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="CV.html">CV</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Documents.html">Documents</a>
+    </li>
+          <li class="nav-item">
+      <a class="nav-link" href="Reminders.html">Reminders</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Projects.html">Projects</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Bookmarks.html">Bookmarks</a>
+    </li>
+          <li class="nav-item">
+      <a class="nav-link" style="color: green"  onclick="RandomFact()">Random Fact</a>
+    </li>
+            <li class="nav-item">
+      <a class="nav-link n" style="color: green" onclick="Time()">Time</a>
+    </li>
+          <li class="nav-item">
+      <a class="nav-link" style="color: green"  onclick="bgChangeNight()">NightMode</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Mail.html">FastGmail</a>
+    </li>
+
+        <li class="navbar-nav ml-auto">
+      <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+    <input name="sitesearch" type="hidden" value="">
+    <input autocomplete="on" class="form-control search" name="q" placeholder="Search on Google" required="required"  type="text">
+      <button class="button" type="submit">Search</button>
+
+
+      </form>
+      </li>
+      </div>
+  </ul>
+
+</nav>
+{% endblock %}
+   <br/>
+   <br/>
+   <br/>
+
+   {% block header %}  <div class="align-content-center  "> <h1 style="margin-left: 26.8%;font-size:72pt;font-family:Bahnschrift;font-weight: bolder;color:navajowhite; text-shadow: 1px 1px black;" > Personal online portfolio</h1></div> {% endblock %}
+
+
+    {% block list %}{% endblock %}
+
+
+    {% block CV %}{% endblock %}
+
+    {% block Projects %}  {% endblock %}
+
+<br />
+   <br />
+   <br />
+    {% block reminder %}
+
+
+{% endblock %}
+   {% block fact %}
+
+   {% endblock %}
+
+
+
+    {% block Bookmarks %} {% endblock %}
+
+
+    {% block Documents %} {% endblock %}
+
+    {% block mail %}
+
+    {% endblock %}
+
+   {% block upload %}
+
+   {% endblock %}
+
+    {% block bio %}
+
+    {% endblock %}
+
+   <div class="footer ">
+  <p> <a href="https://youtube.com/"> <img src="../static/pictures/youtube.png" class="rounded-circle" width="90px" height="90px" style="margin-left: 4%;margin-right: 45%;margin-top: 3%;" > </a>
+      <a href="https://twitter.com"> <img src="../static/pictures/twitter.jpg" class="rounded-circle" width="90px" height="90px" style="margin-left: 4%;margin-right: 5%;margin-top: 3%;"> </a></p>
+   </div>
+    <script  src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "Guest.html" %}
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+<style>
+
+
+body {
+
+    background-image: url({{url}});
+}
+</style>
+    </head>
+</html>
+
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block mail %}
+<p style="font-size: 40pt; margin-left: 41%; color: #dc3545; font-weight: bolder"> Send Fast Gmails!</p>
+<br />
+    <br />
+    <br />
+
+       <form action="/contact_mail" method="post">
+       <label style="font-family: 'Comic Sans MS';font-weight: bolder;margin-left:43.5%;color:orangered;"> Email to  :<br /> </label> <input type = "email" name="email" />
+    <br />
+           <br />
+        <textarea style="margin-left: 44%" name="contents" cols="30" rows="10"></textarea>
+        <br />
+           <br />
+
+           <button style="margin-left: 49%" class="btn btn-outline-danger" type="submit"> Send </button>
+       </form>
+
+
+
+
+
+{% endblock %}
+
+{% block bio %}
+{% endblock %}

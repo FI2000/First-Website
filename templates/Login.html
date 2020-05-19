@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        p {
+            text-align: center;
+            font-size: larger;
+        }
+        body{
+            background-image: url("../static/pictures/loginbg.png");
+        }
+
+    </style>
+</head>
+<body>
+<div style="margin-top: 10%">
+<form action="/" method = "post">
+    <p style="font-family: Bahnschrift; color:darkred;font-weight: bolder;font-size: x-large"> Enter Password: </p>
+    <p> <input type = "password" name="ps" /> </p>
+    <p> <input type = "submit" class="btn btn-outline-danger" value="submit" /> </p>
+
+</form>
+</div>
+<br />
+<br />
+<br />
+<form action="reset" method = "post">
+    <p> <input type = "submit"  class="btn btn-outline-danger" value="Forgot password" name="reset" /> </p>
+
+</form>
+<br />
+<br />
+<br />
+<form action="guest" method = "post">
+    <p> <input type = "submit"  class="btn btn-outline-success" value="Enter as a Guest" name="guest" /> </p>
+
+</form>
+
+
+</body>
+</html>

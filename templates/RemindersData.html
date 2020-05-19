@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block reminder %}
+<body>
+
+<div >
+<table border=1px >
+<label style="color:darkred;font-family:'Arial Black';text-decoration: none; font-size: 30pt ; margin-left:42%"> YOU HAVE TO :  </label>
+<ul class="collection with-header" style="margin-left: 44%">
+        {% for item in list %}
+            <li style="color:darkred;font-family:'Arial Black';text-decoration: none; font-size: 18pt"><a href="#">{{ item }}</a></li>
+        {% endfor %}
+    </ul>
+</table>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div >
+    <form action="/delete" method="POST">
+        <label style="color: green; font-family: Bahnschrift;font-weight: bolder;margin-left: 46%"> Remove all reminders</label>
+        <br/>
+        <input type="submit" style="margin-left: 47%"class="btn btn-outline-success" value="Remove!" name="remove"/>
+    </form>
+</div>
+</body>
+{% endblock %}

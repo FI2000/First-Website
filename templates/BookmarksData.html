@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block Bookmarks %}
+    <div class="container-sm" style="width: 330px;margin-left: 38%">
+ <table border="1" class=" table-hover table table-bordered d-md-table" style="float:left;margin-left:36%;margin-right: 70% " >
+
+	<tr>  <td > <a href="https://www.concordia.ca/" style="color:darkred;font-family:'Arial Black';text-decoration: none";> Concordia Main Site </a>  </tr>
+	<tr>  <td> <a href=">https://my.concordia.ca/" style="color:darkred;font-family:'Arial Black';text-decoration: none";> My Concordia Site	</a></td> </tr>
+     <tr>  <td>  <a href="https://html.com" style="color:darkred;font-family:'Arial Black';text-decoration: none";> Guide to HTML </a> </td> </tr>
+     {% for item in id %}
+         <tr> <td>  <a href=" {{   link[loop.index0]  }}" style="color:darkred;font-family:'Arial Black';text-decoration: none"; > {{ item }} </a> </td>  </tr>
+     {% endfor %}
+     
+ </table>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "Guest.html" %}
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+<style>
+
+
+body {
+
+    background-image: url({{url}});
+}
+</style>
+    </head>
+</html>
+
+{% block reminder %}
+
+
+
+{% endblock %}
+
+
+{% block mail %}
+    <p style="color:green;font-family:Bahnschrift;font-size: 40pt; margin-left: 39%; text-shadow: black;"> Message has been sent !</p><br /><br />
+    <br /><br />
+    <p style="margin-left: 45%;color:blue;font-size: 20pt;font-weight: bolder">Message sent : </p>
+    <textarea style="margin-left: 45%" cols="30" rows="10">
+     {{ mssage }}
+    </textarea>
+
+
+
+
+{% endblock %}
+
+{% block bio %}
+{% endblock %}

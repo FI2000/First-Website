@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block reminder %}
+
+
+
+        <p style="font-family:Bahnschrift;font-weight: bolder;font-size:200%;text-align: center;color:red;";> REMINDERS! <br/> </p>
+    <a href="RemindersData.html"><img src="https://americanaddictioncenters.org/wp-content/uploads/2017/02/warning_sign.gif" width="100px" height="100px" style="margin-left: 47.9%">  <br /> </a>
+    <br />
+        <br />
+        <p style="font-family: 'Comic Sans MS';font-weight: bolder;text-align: center;color:orange;";>
+    <br />
+     <br />
+    <br />
+    <p style="font-family: 'Comic Sans MS';font-weight: bolder;margin-left:47.35%;color:orangered;";> Add reminders</p>
+
+
+     <div style="margin-left: 45%">
+        <label></label>
+        <form action="/Reminders_data" method="POST">
+            <input type="text" name="reminder"/>
+            <input type="submit" class="btn btn-outline-primary" value="submit"/>
+        </form>
+    </div>
+<br />
+    <br />
+   <!-- <a href="RemindersData.html"> <input type="button" value="Show Reminders" style="margin-left: 47.35%"></input></a> -->
+
+{% endblock %}
+
