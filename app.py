@@ -224,8 +224,8 @@ def handle_mailing():
             message = request.form.get("contents")
             server = smtplib.SMTP("smtp.gmail.com", 587)
             server.starttls()
-            server.login("soen287assignment@gmail.com", "soen287password")
-            server.sendmail("soen287assignment@gmail.com", email, message)
+            server.login("*Email*", "password")
+            server.sendmail("*Email*", email, message)
             return render_template('MessageSent.html', data=request.form, mssage=message)
         else:
             return render_template("base.html")
@@ -233,7 +233,7 @@ def handle_mailing():
         return render_template("base.html")
 
 
-app.config["IMAGE_UPLOADS"] = "C:/Users/xelma/PycharmProjects/a@/static/"
+app.config["IMAGE_UPLOADS"] = "C:/Users/NAME/PycharmProjects/NAME/static/"
 
 
 @app.route("/upload-image", methods=["POST", "GET"])
